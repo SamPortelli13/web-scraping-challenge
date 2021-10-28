@@ -1,0 +1,119 @@
+
+.box2 {
+  height: 600px;
+  padding: 40px;
+  color:rgb(46, 179, 184);
+  background: rgb(241, 239, 239);
+  font-size: 1.0rem;
+}
+.box3 {
+  height: 200px;
+  padding: 20px;
+  color:rgb(46, 179, 184);
+  background: rgb(241, 239, 239);
+  font-size: 1.0rem;
+}
+.h2b {
+  color:rgb(46, 179, 184);
+  font-size: 1.5rem;
+  padding-left: 20px;
+  font-weight:bold;
+  font-family:Arial, Helvetica, sans-serif ;
+
+}
+.h2c {
+    font-size: 1rem;
+    padding-left: 20px;
+    color:black;
+
+}
+.h2d {
+  padding-top: 1rem;
+  color:rgb(46, 179, 184);
+  text-align: center!important;
+  font-size: 1.0rem;
+  font-weight:bold;
+  font-family:Arial, Helvetica, sans-serif ;
+}
+
+.h2e {
+  font-size: 1rem;
+  padding-left: 20px;
+  color:black;
+  word-wrap: normal;  
+  width: 50px;
+
+}
+
+
+.skyblue {
+  background: rgb(0, 119, 255);
+}
+
+.purple {
+  background: rebeccapurple;
+}
+
+.red {
+  background: indianred;
+}
+.navbar-brand2 {
+  display: inline-block;
+  padding: .5rem 1rem;
+  padding-top: .3125rem;
+  padding-bottom: .3125rem;
+  margin-right: 1rem;
+  font-size: 2.0rem;
+  line-height: inherit;
+  white-space: nowrap;
+  background: rgb(46, 179, 184);
+  color:#fff;
+}
+
+.thumbnail2 {
+  padding: .5rem 1rem;
+  padding-top: .5rem;
+  padding-bottom: 0.5rem;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: .25rem;
+  max-width: 47%;
+}
+.thumbnail3 {
+  padding: .5rem 1rem;
+  padding-top: .5rem;
+  padding-bottom: 0.5rem;
+  background-color: #fff;
+  border: 2px solid rgb(46, 179, 184);
+  border-radius: .25rem;
+  max-width: 45%;
+}
+/* Selecting elements by ID */
+#main-analyis,
+#analysis-image {
+  float: none;
+}
+
+#figure {
+  float: left;
+  position: relative;
+  padding-right: 20px;
+  max-width: 45%;
+}
+
+#analysis-name {
+  position: absolute;
+  top: 150px;
+  left: 30px;
+}
+
+#main-analyis {
+  width: 70%;
+}
+
+
+#analysis-image {
+  width: 80%;
+
+  margin-right: 20px;
+}

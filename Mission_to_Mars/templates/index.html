@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mission to Mars</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="C:/Users/sampo/Documents/DataAnalyticsCourse2021/CourseWork/web-scraping-challenge/Mission_to_Mars/templates/style.css">
+</head>
+
+<body>
+  <div class="jumbotron text-center">
+    <h2>Mission to Mars</h2>
+    <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
+  </div>
+  <div style = "position:relative; left:20px">
+    <h3>Latest Mars News</h3>
+    <h4>{{ mars_db.news_title }}</h4>
+    <h5>{{ mars_db.news_text }}</h5>
+    <p></p>
+  </div>
+
+
+  <div class = "row">
+    <div class="col-xs-3 col-md-6">
+      <div class="container-fluid"> 
+        <h3>Featured Mars Image</h3>
+        <img src="{{ mars_db.featured_image_src }}" width = 90% alt="Featured"> 
+      </div>
+    </div> 
+    <div class="col-xs-3 col-md-6">
+      <h3>Mars Facts</h3> 
+      <div class="table-responsive">
+        <table class="table table-striped w-auto h4">
+          {{ mars_db.facts_table | safe }}
+        </table>
+      </div>
+    </div> 
+  </div>
+  <p>. </p>
+  <p>. </p>
+  <p>. </p>
+  <style>
+    pre {
+       overflow-x:auto;
+       white-space: break-spaces;
+       word-wrap:break-word;
+       word-break:normal;
+       width: 150px;
+       text-align: left;
+       font-size: 1.25rem;
+    }
+  </style>
+  <style type="text/css"> 
+    .padded img { 
+      padding-left: 6em; 
+      padding-right: 20px; 
+      max-width: 90%;
+    } 
+    </style> 
+    <style>
+      table td {
+        font-size: 24px;
+      }
+      table th {
+        font-size: 24px;
+      }
+
+     </style>
+    <div style = "position:relative; left:820px">
+      <h3>Mars Hemispheres</h3>
+      <p></p>
+    </div>
+  </div>
+    <div class="row" style = "position:relative; left:30px; ">
+        <div class="col-md-2">
+          <img class="padded" src={{ mars_db.hemisphere_img_url0 }} width=300 alt="hemishpere 3", >
+          <pre> {{ mars_db.hemisphere_title0 }} </pre>
+          </div>
+        <div class="col-md-2">
+          <img class="padded" src={{ mars_db.hemisphere_img_url1 }} width=300 alt="hemishpere 3">
+          <pre> {{ mars_db.hemisphere_title1 }}</pre>
+          </div>
+         <div class="col-md-2">
+          <img class="padded" src={{ mars_db.hemisphere_img_url2 }} width=300 alt="hemishpere 3">
+          <pre> {{ mars_db.hemisphere_title2 }}</pre>
+          </div>
+         <div class="col-md-2">
+            <img src={{ mars_db.hemisphere_img_url3}} width=300 alt="hemishpere 3">
+            <pre> {{ mars_db.hemisphere_title3 }}</pre>
+          </div>
+        </div>
+    </div>
+
+
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+
+</body>
+
+</html>
